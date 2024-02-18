@@ -63,7 +63,7 @@ ggplot(df, aes(x=date)) +
 
 <div class="figure" style="text-align: center">
 
-<img src="/assets/img/unnamed-chunk-2-1.png" alt="Fig 1.1 Monthly dispensing of PBS-subsidised combined and mini pills per 10,000 women of reproductive age between January 2013 and December 2016"  />
+<img src="/assets/img/unnamed-chunk-2-1.png"  />
 <p class="caption">
 Fig 1.1 Monthly dispensing of PBS-subsidised combined and mini pills per
 10,000 women of reproductive age between January 2013 and December 2016
