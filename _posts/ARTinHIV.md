@@ -88,7 +88,7 @@ decreased below 1000 copies/mL in a few times of the treatment. Male and
 female patients remains low level of viral load for the rest of the
 treatment once it reaches undetectable levels.
 
-<img src="ARTinHIV_files/figure-markdown_strict/unnamed-chunk-4-1.png" style="display: block; margin: auto;" />
+<img src="/assets/img/ARTinHIV_img1.png" style="display: block; margin: auto;" />
 
 The normal range of CD4 count is from 500 to 1500 cells/μL of blood, and
 it progressively decreases over time in persons who are not receiving or
@@ -105,7 +105,7 @@ cells/μL at its highest whereas male patients has around 500-800
 cells/μL in their range. In other works, women has a higher risk without
 treatment of HIV, also the treatment work effectively when provided.
 
-<img src="ARTinHIV_files/figure-markdown_strict/unnamed-chunk-5-1.png" style="display: block; margin: auto;" />
+<img src="/assets/img/ARTinHIV_img2.png" style="display: block; margin: auto;" />
 
 Below describes the effect of the treatment over time by different
 ethnicity and gender.
@@ -124,7 +124,7 @@ Caucasian shows the highest viral load during the entire time, and seems
 less improvement of viral load drops to the undetectable level (viral
 load &lt;50 copies/mL) over the time compared to other races.
 
-![](ARTinHIV_files/figure-markdown_strict/unnamed-chunk-6-1.png)![](ARTinHIV_files/figure-markdown_strict/unnamed-chunk-6-2.png)
+![](/assets/img/ARTinHIV_img3.png)![](/assets/img/ARTinHIV_img4.png)
 
 Following graphs describe viral load of male and female patient on
 different base drug combination. Overall, average number of viral load
@@ -140,7 +140,7 @@ are only effective to the patients whose symtoms are mild, however other
 factors should be considered to come up with the conclusion of the
 effectiveness.
 
-<img src="ARTinHIV_files/figure-markdown_strict/unnamed-chunk-7-1.png" style="display: block; margin: auto;" />
+<img src="/assets/img/ARTinHIV_img5.png" style="display: block; margin: auto;" />
 
 ## Animation
 
@@ -150,7 +150,7 @@ each treatment, viral load drops quickly and CD4 increased, and CD4
 drops again until the next treatment. Over the treatment, average CD4
 increases and viral load decreases.
 
-<img src="ARTinHIV_files/figure-markdown_strict/unnamed-chunk-8-1.gif" style="display: block; margin: auto;" />
+<img src="/assets/img/ARTinHIV_img6.gif" style="display: block; margin: auto;" />
 
 **Reference**  
 World Health Organization. (n.d.). HIV/AIDS. Available from
