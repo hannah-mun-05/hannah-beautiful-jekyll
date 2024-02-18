@@ -1,47 +1,14 @@
-Impact of the media attention on the PBS-subsidised dispensing of
-combined and progestogen-only oral contraceptives in Austrlia
-================
-Hannah Mun
-27 Nov 2023
+---
+layout: post
+title: Time series data analysis
+thumbnail-img: /assets/img/thumb.png
+share-img: /assets/img/path.jpg
+author: Hannah Mun
+---
 
-- [Introduction](#introduction)
-- [Method](#method)
-  - [Time series data](#time-series-data)
-  - [Fitting a model](#fitting-a-model)
-- [Results](#results)
-  - [Final model](#final-model)
-  - [Counterfactual](#counterfactual)
-- [Discussion](#discussion)
+This is a data analysis practive work on impact of the media attention on the PBS-subsidised dispensing of combined and progestogen-only oral contraceptives in Austrlia
 
-# Introduction
-
-Oral contraceptives are a popular form of birth control and are used to
-treat other conditions such as endometriosis or polycystic ovary
-syndrome. The most common type of oral contraceptive is the combined
-pill, which contains a combination of the hormones oestrogen and
-progestogen. However, the combined pill increases the risk of blood clot
-formation, such as deep vein thrombosis, pulmonary embolism, and stroke.
-In contrast, the progestogen-only pill (also called the “mini pill”)
-does not increase the risk of blood clots. A paper published in the BMJ
-on 26 May 2015 quantified the risk associated with different
-oestrogen/progestogen combinations and received substantial media
-attention worldwide (Vinogradova et al., 2015).
-
-The media attention surrounding the increased risk of thrombosis
-associated with oral contraceptive use has raised concerns about the
-safety of the combined pill. This study aims to investigate the impact
-of the media attention on the dispensing of combined and
-progestogen-only oral contraceptives in Australia. Specifically, we will
-use time series data to explore the changes in PBS-subsidised dispensing
-of these contraceptives following the publication of the BMJ paper. In
-Australia, several combined contraceptive pills containing
-levonorgestrel/ethinylestradiol, norethisterone/ethinylestradiol, and
-norethisterone/mestranol are subsidised through the PBS. However, other
-combined pill formulations such as those containing drosperinone,
-cyproterone, and desogestrel are not subsidised and are not captured in
-the data. Several progestogen-only mini pills, including levonorgestrel
-and norethisterone, are also subsidised. (ChatGPT used to develop text
-in this section)
+# About the data
 
 ``` r
 # Load data
@@ -524,85 +491,4 @@ PBS dispesned combined pills without media attention on mini pills based
 on ARIMA model</figcaption>
 </figure>
 
-------------------------------------------------------------------------
 
-# Discussion
-
-In this study, the impact of media attention on the use of combined
-contraceptives and progestogen-only oral contraceptives, commonly known
-as mini pills was analysed. The media highlighted the potential risks
-associated with the use of combined oral contraceptives. Our study aimed
-to quantify the effect of this media attention on the dispensing of
-these contraceptives in Australia. The data analysis approach involves
-determining stationarity, seasonality, and autocorrelation of the data.
-Given that the study focuses on combined pills, with mini pills
-considered as an external influence, we have chosen to use the ARIMA
-model for analysis. Specifically, we observed a decrease in the
-dispensing of PBS-subsidised combined pills and an increase in the
-dispensing of mini pills. This trend suggests that the media attention
-may have influenced public perception and use of these contraceptives,
-leading to a preference for mini pills due to their lower associated
-risk of venous thromboembolism. These findings underscore the
-significant role that media attention plays in shaping public health
-behaviors and decisions. Further research is needed to explore this
-relationship in more detail and to develop strategies for ensuring
-accurate and balanced information is dispersed to the public.
-
-------------------------------------------------------------------------
-
-#### References
-
-Australia, H. (2019, March 13). The pill (combined oral contraceptive
-pill). Www.healthdirect.gov.au.
-<https://www.healthdirect.gov.au/the-pill-combined-oral-contraceptive-pill>
-Package “seastests.” (2022).
-<https://cran.r-project.org/web/packages/seastests/seastests.pdf>
-Science, B. (2020, June 17). Time Series in 5-Minutes, Part 2:
-Autocorrelation and Cross Correlation \| R-bloggers.
-<https://www.r-bloggers.com/2020/06/time-series-in-5-minutes-part-2-autocorrelation-and-cross-correlation/>
-plot_acf_diagnostics: Visualize the ACF, PACF, and CCFs for One or More
-Time Series in timetk: A Tool Kit for Working with Time Series. (n.d.).
-Rdrr.io. Retrieved November 26, 2023, from
-<https://rdrr.io/cran/timetk/man/plot_acf_diagnostics.html> 2.8
-Autocorrelation \| Forecasting: Principles and Practice. (n.d.). In
-otexts.com. <https://otexts.com/fpp2/autocorrelation.html> jung, G.M.
-and Box, G.E.P (1978). “On a Measure of Lack of Fit in Time Series
-Models”. Biometrika, 65, 297-303. LjungBox function - RDocumentation.
-(n.d.). Www.rdocumentation.org. Retrieved November 26, 2023, from
-<https://www.rdocumentation.org/packages/portes/versions/6.0/topics/LjungBox>
-Schaffer, A.L., Dobbins, T.A. & Pearson, SA. Interrupted time series
-analysis using autoregressive integrated moving average (ARIMA) models:
-a guide for evaluating large-scale health interventions. BMC Med Res
-Methodol 21, 58 (2021). <https://doi.org/10.1186/s12874-021-01235-8>
-Hyndman, Rob & Kostenko, Andrey. (2007). Minimum Sample Size
-Requirements for Seasonal Forecasting Models. Foresight: The
-International Journal of Applied Forecasting. 6. 12-15. The ARIMAX model
-muddle \| Rob J Hyndman. (n.d.). Robjhyndman.com.
-<https://robjhyndman.com/hyndsight/arimax/>
-
-------------------------------------------------------------------------
-
-#### Student declaration
-
-All assessments should include a copy of the student declaration
-regarding plagiarism, student academic misconduct and proper back-up of
-your assessment. The text of the declaration is provided below. You
-should copy this into your report and tick the boxes to indicate your
-agreement with the statements.
-
-> I declare that this assessment item is my own work, except where
-> acknowledged, and has not been submitted for academic credit elsewhere
-> or previously, or produced independently of this course (e.g. for a
-> third party such as your place of employment) and acknowledge that the
-> assessor of this item may, for the purpose of assessing this item: (i)
-> Reproduce this assessment item and provide a copy to another member of
-> the University; and/or (ii) Communicate a copy of this assessment item
-> to a plagiarism checking service (which may then retain a copy of the
-> assessment item on its database for the purpose of future plagiarism
-> checking).  
-> - \[x\] I understand and agree I certify that I have read and
-> understood the University Rules in respect of Student Academic
-> Misconduct.  
-> - \[x\] I understand and agree I have a backup copy of the
-> assessment.  
-> - \[x\] I understand and agree
