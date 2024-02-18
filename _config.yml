@@ -20,11 +20,15 @@ author: Hannah Mun
 ###############################################
 
 navbar-links:
-  About Me: "aboutme"
-  Resources:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://deanattali.com"
+  #About Me: "aboutme"
+  #Resources:
+  #  - Beautiful Jekyll: "https://beautifuljekyll.com"
+  #  - Learn markdown: "https://www.markdowntutorial.com/"
+  #Author's home: "https://deanattali.com"
+  My projects:
+   - Data exploration on synthetic ART-in-HIV data
+     - Initial data exploration
+     - Interactive data visualisation
 
 ################
 # --- Logo --- #
