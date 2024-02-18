@@ -37,7 +37,6 @@ Fig 1.1 Monthly dispensing of PBS-subsidised combined and mini pills per
 10,000 women of reproductive age between January 2013 and December 2016
 </p>
 
-</div>
 
 During observation time, combined pills are dispensed between 288.8 to
 331.7 times, and 21 to 24.6 times of mini pills are dispensed during the
