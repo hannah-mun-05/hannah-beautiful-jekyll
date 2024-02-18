@@ -28,40 +28,8 @@ summary(df)
     ##                     3rd Qu.:316.3   3rd Qu.:23.52  
     ##                     Max.   :331.7   Max.   :24.60
 
-Fig 1.1 illustrates monthly counts of PBS subsidised dispensing of
-combined pill and mini pill per 10,000 women of reproductive age in
-Australia. The data is collected from January 2013 to December 2016.
 
-``` r
-# Convert <chr> to <date> format
-df$date <- as.Date(x=paste0("01-",df$month), format = "%d-%B-%y")
 
-# Plot raw data
-ggplot(df, aes(x=date)) +
-  geom_line(aes(y=combined), colour = "#69b3a2", linewidth = 1) +
-  geom_line(aes(y=mini*(100/8)), colour = "#b3697a", linewidth = 1) +
-  geom_vline(xintercept = as.numeric(as.Date("2015-06-01")), colour = "grey", lty="dashed", lwd=2)+
-  theme_ipsum() +
-  scale_x_date(date_labels = "%b-%y", date_minor_breaks = "1 month") +
-  scale_y_continuous(name ="Combined",limits = c(250,350), sec.axis = sec_axis(trans=~.*0.08, name="Mini")) + 
-  theme(
-    axis.title.y = element_text(angle = 360, color = "#69b3a2", size = 12, face = "bold"),
-    axis.line.y = element_line (color = "#69b3a2"),
-    axis.ticks.y = element_line (color = "#69b3a2"),
-    axis.text.y = element_text (color = "#69b3a2"),
-    axis.title.y.right = element_text(angle = 360,vjust = 1, color = "#b3697a", size = 12, face = "bold"),
-    axis.line.y.right = element_line (color = "#b3697a"),
-    axis.ticks.y.right = element_line (color = "#b3697a"),
-    axis.text.y.right = element_text (color = "#b3697a"),
-    plot.title = element_text(size = 12),
-    #plot.subtitle = element_text(size = 12, hjust =0.5, size =8, facel = Italic),
-    plot.caption = element_text(size = 10, hjust =0.5, face = "bold")
-  ) +
-  labs(title = "Monthly counts of dispensing combined pills vs. mini pills") +
-  xlab("") 
-```
-
-<div class="figure" style="text-align: center">
 
 <img src="/assets/img/unnamed-chunk-2-1.png"  />
 <p class="caption">
@@ -95,12 +63,6 @@ data instead of log form. We can also see there is annual cycle in
 combined pills in fig 1.2 and fig 1.3 which will be examined for
 seasonality.
 
-``` r
-# Create time series data
-ts_c <- ts(df$combined, start = c(2013,1) , end =c(2016,12) , frequency = 12) #combined only
-ts_m <- ts(df$mini, start = c(2013,1) , end =c(2016,12) , frequency = 12) # mini only 
-ts_cm <- ts(df[,2:3], start = c(2013,1) , end =c(2016,12) , frequency = 12) # combined and mini
-```
 
 ![](/assets/img/unnamed-chunk-4-1.png)<!-- -->![](/assets/img/unnamed-chunk-4-2.png)<!-- -->
 
@@ -108,10 +70,6 @@ Also, Augmented Dickey-Fuller (ADF) test is conducted for a statistical
 check. Hypothesis of ADF test is H0: time series is non-stationary (p \>
 0.05), H1: time series is stationary (p ≤ 0.05)
 
-``` r
-# ADF test
-adf.test(ts_c, alternative = "stationary")
-```
 
     ## 
     ##  Augmented Dickey-Fuller Test
@@ -133,21 +91,9 @@ seasonal plot fig 2.4 supports yearly trend in the data where the number
 of dispense hits the bottom in early year, then increasing through rest
 of the year.
 
-``` r
-# Seasonal plot
-ggseasonplot(ts_c, polar=TRUE) +  ylab("Counts") +
-labs(title = "", caption = "Figure 2.3: Polar seasonal plot of monthly counts of combined pills") +
-theme(plot.caption = element_text(size = 10, hjust =0.5, face = "bold"))
-```
 
 ![](/assets/img/unnamed-chunk-6-1.png)<!-- -->
 
-``` r
-# Decompose seasonality
-dec_c <- decompose(ts_c)
-plot(dec_c)
-title(sub ="Fig 2.4 Decomposed seasonal plot of monthly counts of combined pills") 
-```
 
 ![](/assets/img/unnamed-chunk-6-2.png)<!-- -->
 
@@ -156,10 +102,6 @@ Hypothesis of the test is H0: all months have the same mean, therefore
 the data is no seasonality (p \> 0.05), H1: time series has a
 seasonality (p ≤ 0.05)
 
-``` r
-# Kruskall Wallis test
-kw(ts_c, freq = 12, diff = T, residuals = F, autoarima = T)
-```
 
     ## Test used:  Kruskall Wallis 
     ##  
@@ -184,25 +126,13 @@ Following plots are ACF, PACF and CCF against mini pills. ACF and PACF
 interpret delayed impact of combine pills only, and we included mini
 pills in CCF as an external regression.
 
-``` r
-# Visualize ACF, PACF, and CCF
-acf(c(ts_c), main = "ACF of combined pills")
-title(sub ="Fig 2.5 ACF plot")
-```
 
 ![](/assets/img/unnamed-chunk-8-1.png)<!-- -->
 
-``` r
-pacf(c(ts_c), main = "Partial ACF of combined pills")
-#ccf(ts_c, ts_m, main = "Cross correlation between combined pills and mini pills")
-title(sub ="Fig 2.6 PACF plot")
-```
 
 ![](/assets/img/unnamed-chunk-8-2.png)<!-- -->
 
-``` r
-print(ccf(c(ts_c), c(ts_m), plot = FALSE))
-```
+
 
     ## 
     ## Autocorrelations of series 'X', by lag
@@ -214,10 +144,6 @@ print(ccf(c(ts_c), c(ts_m), plot = FALSE))
     ##      9     10     11     12     13 
     ## -0.170 -0.073 -0.291  0.183 -0.223
 
-``` r
-ccf(c(ts_c), c(ts_m), main = "CCF of combined pills against mini pills")
-title(sub ="Fig 2.7 Cross correlation plot between combined pills and mini pills")
-```
 
 ![](/assets/img/unnamed-chunk-8-3.png)<!-- -->
 
@@ -241,10 +167,6 @@ the test are, H0: there is no auto/ cross correlation in time series (p
 \> 0.05) and H1: there is an auto/cross correlation in time series (p ≤
 0.05).
 
-``` r
-# Ljung and Box Portmanteau test
-LjungBox(ts_cm, lags = 10, sqrd.res = TRUE )
-```
 
     ##  lags statistic df      p-value
     ##    10  125.2702 40 1.012246e-10
