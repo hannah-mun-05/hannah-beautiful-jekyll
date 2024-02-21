@@ -6,10 +6,10 @@ share-img: /assets/img/path.jpg
 author: Hannah Mun
 ---
 
-### This is a part of time series data analysis practice work created using R
+#### This is a part of time series data analysis practice work created using R
 
 
-# About the data
+### About the data
 
 ``` r
 # Load data
@@ -44,9 +44,9 @@ During observation time, combined pills are dispensed between 288.8 to
 same time. Use of mini pills are clearly increased from 2013 to 2017
 whereas combined pills do not show strong trend of increase or decrease.
 
-# Method
+### Method
 
-## Time series data
+#### Time series data
 
 From the raw data, we created a time series data starting from January
 2013 to December 2016 by monthly basis. We will examine its trend
@@ -175,5 +175,5 @@ P-value of the test less than 0.05, therefore we reject Null hypothesis
 and consider that there is a delayed impact in the time series.
 
 
--- End of document --
+
 
