@@ -1,12 +1,13 @@
 ---
 layout: post
-title: Time series data analysis
+title: Impact of the media attention on the PBS-subsidised dispensing of combined and progestogen-only oral contraceptives in Austrlia
 thumbnail-img: /assets/img/thumb.png
 share-img: /assets/img/path.jpg
 author: Hannah Mun
 ---
 
-This is a data analysis practice work on impact of the media attention on the PBS-subsidised dispensing of combined and progestogen-only oral contraceptives in Austrlia
+### This is a part of time series data analysis practice work created using R
+
 
 # About the data
 
