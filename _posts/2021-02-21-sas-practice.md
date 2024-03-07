@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Creating analysis ready data for reproducible research
-thumbnail-img: /assets/img/thumb.png
-share-img: /assets/img/path.jpg
+#thumbnail-img: /assets/img/thumb.png
+#share-img: /assets/img/path.jpg
 author: Hannah Mun
 ---
 
