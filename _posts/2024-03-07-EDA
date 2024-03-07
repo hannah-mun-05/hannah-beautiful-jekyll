@@ -1,11 +1,15 @@
 ---
-title: "Initial univariate explorations on synthetic ART-in-HIV data"
-author: "Hannah Mun"
-date: "`r Sys.Date()`"
-output: html_document
+layout: post
+title: EDA practice
+thumbnail-img: /assets/img/thumb.png
+share-img: /assets/img/path.jpg
+author: Hannah Mun
 ---
 
-```{r setup, include=FALSE}
+#### This is a part of data visualisation practice work created using R 
+
+
+```{r setup, include=TRUE}
 knitr::opts_chunk$set(echo = TRUE)
 install.packages('datadictionary', repo="https://cran.r-project.org/")
 library(dplyr)
