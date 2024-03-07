@@ -1,8 +1,6 @@
 ---
 layout: post
-title: Impact of the media attention on the PBS-subsidised dispensing of combined and progestogen-only oral contraceptives in Austrlia
-thumbnail-img: /assets/img/thumb.png
-share-img: /assets/img/path.jpg
+title: Time Series Data Analysis using R
 author: Hannah Mun
 ---
 
