@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Exploratory Data Analysis using R
+#thumbnail-img: /assets/img/thumb.png
+#share-img: /assets/img/path.jpg
 author: Hannah Mun
 ---
 
