@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Time Series Data Analysis using R
-#thumbnail-img: /assets/img/thumb.png
-#share-img: /assets/img/path.jpg
+thumbnail-img: /assets/img/thumb.png
+share-img: /assets/img/path.jpg
 author: Hannah Mun
 ---
 
