@@ -1,8 +1,6 @@
 ---
 layout: post
 title: Creating analysis ready data for reproducible research using SAS
-#thumbnail-img: /assets/img/thumb.png
-#share-img: /assets/img/path.jpg
 author: Hannah Mun
 ---
 
