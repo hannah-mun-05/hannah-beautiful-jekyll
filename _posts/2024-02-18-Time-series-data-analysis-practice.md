@@ -6,12 +6,12 @@ title: Time Series Data Analysis using R
 author: Hannah Mun
 ---
 
-This is a part of time series data analysis practice work created using R
+All images and statistical results are created by using R.
 
 
 ### About the data
 
-``` r
+```(r ECHO =FALSE}
 # Load data
 df <- read.csv("Data/contraceptives.csv")
 
