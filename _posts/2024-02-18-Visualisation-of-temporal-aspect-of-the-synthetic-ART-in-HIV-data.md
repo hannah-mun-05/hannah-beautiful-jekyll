@@ -6,7 +6,7 @@ title: Data visualisation using R
 author: Hannah Mun
 ---
 
-#### This is a part of data visualisation practice work created using R 
+This is a part of data visualisation practice work created using R 
 
 ### Data preparation
 
