@@ -4,9 +4,9 @@ title: Time Series Data Analysis using R
 author: Hannah Mun
 ---
 
-#
+
 All images and statistical results are created by using R.
-#
+
 
 #### About the data
 ```{r}
