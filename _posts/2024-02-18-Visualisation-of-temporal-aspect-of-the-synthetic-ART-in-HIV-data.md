@@ -8,7 +8,8 @@ author: Hannah Mun
 
 This is a part of data visualisation practice work created using R 
 
-### Data preparation
+
+#### Data preparation
 
     # load csv file
     df <- read_csv("https://figshare.com/ndownloader/files/35249488")
@@ -70,7 +71,7 @@ patient has 60 records from timepoints 0 to 59.
     ## 10         9     60
     ## # ℹ 8,906 more rows
 
-## Visualisation
+#### Visualisation
 
 According to WHO, treatment goal of HIV is to reduce the viral load in
 the blood to undetectable levels (less than 50 copies/ml), and the
@@ -143,7 +144,7 @@ effectiveness.
 
 <img src="/assets/img/ARTinHIV_img5.png" style="display: block; margin: auto;" />
 
-## Animation
+#### Animation
 
 Following graph shows a relation between viral load and CD4 of Caucasian
 patients over the time. When viral load goes down, CD4 increases. After
