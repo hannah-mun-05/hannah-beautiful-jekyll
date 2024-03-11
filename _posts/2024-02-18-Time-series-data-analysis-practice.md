@@ -6,7 +6,7 @@ title: Time Series Data Analysis using R
 author: Hannah Mun
 ---
 
-#### This is a part of time series data analysis practice work created using R
+This is a part of time series data analysis practice work created using R
 
 
 ### About the data
