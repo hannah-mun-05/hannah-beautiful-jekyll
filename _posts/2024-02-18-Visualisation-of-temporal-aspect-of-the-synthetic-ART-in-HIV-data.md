@@ -5,9 +5,7 @@ author: Hannah Mun
 ---
 
 
-#
 This is a part of data visualisation practice work created using R 
-#
 
 
 
