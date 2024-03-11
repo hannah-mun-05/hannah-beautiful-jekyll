@@ -1,23 +1,22 @@
 ---
 layout: post
 title: Time Series Data Analysis using R
-#thumbnail-img: /assets/img/thumb.png
-#share-img: /assets/img/path.jpg
 author: Hannah Mun
 ---
 
+#
 All images and statistical results are created by using R.
+#
 
-
-### About the data
-
-```(r ECHO =FALSE}
-# Load data
+#### About the data
+```{r}
+Load data
 df <- read.csv("Data/contraceptives.csv")
 
 #is.na(df) # no missing value
 
-# Statistical summary 
+
+Statistical summary 
 summary(df)
 ```
 
@@ -44,18 +43,16 @@ During observation time, combined pills are dispensed between 288.8 to
 same time. Use of mini pills are clearly increased from 2013 to 2017
 whereas combined pills do not show strong trend of increase or decrease.
 
-### Method
 
-#### Time series data
+#### Time series data analysis
 
 From the raw data, we created a time series data starting from January
 2013 to December 2016 by monthly basis. We will examine its trend
 (Stationarity), autocorrelation and seasonality.
 
-1 Stationarity
+1. Stationarity
 
-As illustrated in fig 1.1 we can see that there is no obvious increase
-or decrease trend in combined pills data over the time. In fig 1.3,
+As illustrated in fig 1.1 we can see that there is no obvious increase or decrease trend in combined pills data over the time. In fig 1.3,
 stationarity of mini pills are removed in log difference form, however
 as our interest is an effect on combined pills, and mini pills are
 considered as a control variable in this study, we will use raw form of
