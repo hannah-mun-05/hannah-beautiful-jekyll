@@ -1,8 +1,6 @@
 ---
 layout: post
 title: Data visualisation using R
-#thumbnail-img: /assets/img/thumb.png
-#share-img: /assets/img/path.jpg
 author: Hannah Mun
 ---
 
