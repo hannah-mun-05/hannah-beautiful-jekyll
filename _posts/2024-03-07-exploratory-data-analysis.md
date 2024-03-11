@@ -6,12 +6,11 @@ title: Exploratory Data Analysis using R
 author: Hannah Mun
 ---
 
-#### This is a part of data visualisation practice work created using R 
+This is a part of data visualisation practice work created using R 
 
 
-```{r setup, include = TRUE, echo=TRUE}
+```{r setup, include = TRUE, echo=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
-install.packages('datadictionary', repo="https://cran.r-project.org/")
 library(dplyr)
 library(ggplot2)
 library(tidyverse)
