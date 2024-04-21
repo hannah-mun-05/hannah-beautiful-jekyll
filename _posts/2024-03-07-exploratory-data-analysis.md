@@ -130,7 +130,7 @@ Over 99% are male whereas only less than 1% are female data collected. Majority 
        library(gridExtra)
        grid.arrange(g,e,nrow=2)
 
-
+![](/assets/img/exp1.png)<!-- 
 
 ### Health status data measurement
 
@@ -165,13 +165,14 @@ Viral load(VL), absolute count for CV4(CD4) and Relative count for CD4(Rel_CD4) 
        # layer plots
          grid.arrange(v,c,r, ncol=1, nrow=3)
 
+![](/assets/img/exp2.png)<!-- 
 
 
 ### HIV treatment factors
 
 Distribution of base drug combination(Base_Drug_Combo),complementary INI(Comp_INI), complementary NNRTI(Comp_NNRTI) and extra PI(Extra_PI) are described as below.
 
-```{r echo=FALSE, warning=FALSE, message=FALSE}
+
 
      # base drug combo distribution
        d <- ggplot(df1,aes(y = fct_infreq(Base_Drug_Combo))) + 
@@ -209,6 +210,7 @@ Distribution of base drug combination(Base_Drug_Combo),complementary INI(Comp_IN
          grid.arrange(d,i,n,ep,ncol=2, nrow=2)
 
 
+![](/assets/img/exp3.png)<!-- 
 
 Variables VL_M,CD4_M and Drug_M indicate if the measurement are taken. Following graph depicts rate of each measurement. Drug is taken 84.4%, VL and CD4 are taken 20.7% and 16.7% respectively. 
 
@@ -224,6 +226,7 @@ Variables VL_M,CD4_M and Drug_M indicate if the measurement are taken. Following
                labs(title = "Measurement taken",x ="", y = "Rate (%)")
 
 
+![](/assets/img/exp4.png)<!-- 
 
 
 
