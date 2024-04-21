@@ -44,7 +44,7 @@ Integer: ID, PatientID, Timepoints
 
 Updated variable types are listed below.
 
-`
+
       df1 <- df1 %>%
         # change selected variables to factor variable
         mutate_at(vars(Gender,Ethnic,Base_Drug_Combo,Comp_INI,Comp_NNRTI,Extra_PI), as.factor) %>%
