@@ -89,7 +89,7 @@ Data dictionary is created with label added, and set ID variable as unique ident
        kableExtra::kable_styling()
   
 
-![](/assets/img/exp_table.png)
+![](/assets/img/exp_table.jpeg)
 
 
 ## EDA on univariate variables
