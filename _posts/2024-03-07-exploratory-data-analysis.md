@@ -4,9 +4,9 @@ title: Exploratory Data Analysis using R
 author: Hannah Mun
 ---
 
-#
+
 This is a part of data visualisation practice work created using R 
-#
+
 
 ```{r setup, include = TRUE, echo=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
