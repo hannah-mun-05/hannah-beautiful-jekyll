@@ -92,9 +92,9 @@ Data dictionary is created with label added, and set ID variable as unique ident
 ![](/assets/img/exp_table.jpeg)
 
 
-## EDA on univariate variables
+### EDA on univariate variables
 
-### Patient demographics
+#### Patient demographics
 
 Over 99% are male whereas only less than 1% are female data collected. Majority of patients are other ethnicity that are not Asian, African nor Caucasian following Caucasian and African. There is no Asian patient data collected.
 
@@ -133,7 +133,7 @@ Over 99% are male whereas only less than 1% are female data collected. Majority 
 
 ![](/assets/img/exp1.png)
 
-### Health status data measurement
+#### Health status data measurement
 
 Viral load(VL), absolute count for CV4(CD4) and Relative count for CD4(Rel_CD4) are collected as indicative of the patient's health status. Each graph shows range of VL, CD4 and Rel_CD4 counted and its average in dashed line.
 
@@ -169,7 +169,7 @@ Viral load(VL), absolute count for CV4(CD4) and Relative count for CD4(Rel_CD4) 
 ![](/assets/img/exp2.png)
 
 
-### HIV treatment factors
+#### HIV treatment factors
 
 Distribution of base drug combination(Base_Drug_Combo),complementary INI(Comp_INI), complementary NNRTI(Comp_NNRTI) and extra PI(Extra_PI) are described as below.
 
