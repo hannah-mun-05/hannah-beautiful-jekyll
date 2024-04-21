@@ -89,6 +89,7 @@ Data dictionary is created with label added, and set ID variable as unique ident
        kableExtra::kable_styling()
   
 
+![](/assets/img/exp_table.png)
 
 
 ## EDA on univariate variables
@@ -130,7 +131,7 @@ Over 99% are male whereas only less than 1% are female data collected. Majority 
        library(gridExtra)
        grid.arrange(g,e,nrow=2)
 
-![](/assets/img/exp1.png)<!-- 
+![](/assets/img/exp1.png)
 
 ### Health status data measurement
 
@@ -165,7 +166,7 @@ Viral load(VL), absolute count for CV4(CD4) and Relative count for CD4(Rel_CD4) 
        # layer plots
          grid.arrange(v,c,r, ncol=1, nrow=3)
 
-![](/assets/img/exp2.png)<!-- 
+![](/assets/img/exp2.png)
 
 
 ### HIV treatment factors
@@ -210,7 +211,7 @@ Distribution of base drug combination(Base_Drug_Combo),complementary INI(Comp_IN
          grid.arrange(d,i,n,ep,ncol=2, nrow=2)
 
 
-![](/assets/img/exp3.png)<!-- 
+![](/assets/img/exp3.png) 
 
 Variables VL_M,CD4_M and Drug_M indicate if the measurement are taken. Following graph depicts rate of each measurement. Drug is taken 84.4%, VL and CD4 are taken 20.7% and 16.7% respectively. 
 
@@ -226,7 +227,7 @@ Variables VL_M,CD4_M and Drug_M indicate if the measurement are taken. Following
                labs(title = "Measurement taken",x ="", y = "Rate (%)")
 
 
-![](/assets/img/exp4.png)<!-- 
+![](/assets/img/exp4.png)
 
 
 
